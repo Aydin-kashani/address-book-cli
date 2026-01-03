@@ -8,6 +8,17 @@ then manage them using basic actions like **viewing**, **searching**, and **dele
 
 ---
 
+## Why I built this
+I built this project to practice working with a simple data model (contacts) and a complete CLI flow.
+It also helped me get used to writing a program that can be extended later (validation, search improvements, saving to file).
+
+## What I learned
+- How to structure a small CLI project with clear actions (add / view / search / delete)
+- How to think about data fields (name, phone, email, notes) and keep things organized
+- How to plan improvements like JSON storage, better search, and cleaner code
+
+---
+
 ## What this project does
 
 This educational CLI project supports the following actions:
@@ -40,7 +51,7 @@ The current version includes:
 
 - Add contact
 - Show contacts
-- Serach contact
+- Search contact
 - Delete contact
 - Exit program
 
