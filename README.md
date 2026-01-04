@@ -8,6 +8,11 @@ then manage them using basic actions like **viewing**, **searching**, and **dele
 
 ---
 
+## Demo
+![Demo](assets/Demo.png)
+
+---
+
 ## Why I built this
 I built this project to practice working with a simple data model (contacts) and a complete CLI flow.
 It also helped me get used to writing a program that can be extended later (validation, search improvements, saving to file).
