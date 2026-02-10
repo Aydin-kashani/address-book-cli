@@ -64,14 +64,14 @@ class Contact:
         str
             A formatted string where each contact is on its own line.
         """
-        formating_resault = []
+        formating_result = []
         contact_number = 1
         for c in contact:
-            formating_resault.append(
+            formating_result.append(
                 f"{contact_number} | First name: {c.first_name} | Last name: {c.last_name}"
                 f"| Phone number: {c.number} | Email: {c.email} | Note: {c.note}")
             contact_number += 1
-        return "\n".join(formating_resault)
+        return "\n".join(formating_result)
 
 class Address_book:
     """
@@ -147,7 +147,7 @@ class Address_book:
                       ).lower().strip()
         
         for search in self.contact_list:
-            if search.first_name == query or search.last_name == query:
+            if search.first_name.lower().strip() == query or search.last_name.lower().strip() == query:
                 self.found_list.append(search)
                 
         if len(self.found_list) > 0:
@@ -224,22 +224,22 @@ while start_program:
     print('5) Exit')
     
     # User menu selection
-    choise_number = int(input('Choise: '))
+    choice_number = int(input('Choice: '))
     
     # Menu routing
-    if choise_number == 1:
+    if choice_number == 1:
         print(operation.add_contact())
         
-    elif choise_number == 2:
+    elif choice_number == 2:
         print(operation.show_contact())
         
-    elif choise_number == 3:
+    elif choice_number == 3:
         print(operation.search_contact())
         
-    elif choise_number == 4:
+    elif choice_number == 4:
         print(operation.delete_contact())
         
-    elif choise_number == 5:
+    elif choice_number == 5:
         print('Exit. Goodbye!')
         start_program = operation.exit_program()
         
